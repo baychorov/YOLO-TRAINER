@@ -3,29 +3,26 @@
 # ==========================================
 
 [dataset]
-# yaml_path = "datasets/custom_data.yaml"
+yaml_path = "configs/data.yaml"
 
 [model]
-# base_weights = "yolov8n.pt"
-# task = "detect"
+base_weights = "yolo11n.pt"
+task = "detect"
 
 [training]
-# epochs = 100
-# batch_size = 16
-# imgsz = 640
-# device = "0"  # or "cpu"
-# workers = 8
+epochs = 1
+batch_size = 16
+imgsz = 640
+device = "0"  # or "cpu"
+workers = 8
 
 [logger]
-# Paths and file retention settings
-filepath = "runs/logs/training.log"
+filepath = "logs/training.log"
 rotation = "10 MB"
 retention = 5
-
-# Logging levels (DEBUG, INFO, WARNING, ERROR, CRITICAL)
 file_log_level = "DEBUG"
-notifier_log_level = "ERROR" 
-is_notifier_active = false  # Set to true when you want to receive emails
+notifier_log_level = "ERROR"
+is_notifier_active = false
 
 [notifier]
 # Email server configurations (Credentials are read from .env)

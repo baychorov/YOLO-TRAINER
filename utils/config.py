@@ -8,8 +8,9 @@ from typing import Any
 class ConfigManager:
     def __init__(self, config_path:str, logger:Any):
         self.config_path = config_path
-        self.settings = self._load_config()
         self.logger = logger
+        self.settings = self._load_config()
+        
 
     def _load_config(self) -> dict:
         try:

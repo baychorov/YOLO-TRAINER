@@ -1,0 +1,7 @@
+path: ../datasets/dataset-1  
+
+train: images/train
+val: images/val
+
+nc: 1
+names: ['test_object']

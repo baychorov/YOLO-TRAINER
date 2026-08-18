@@ -4,7 +4,9 @@ __pycache__/
 venv/
 env/
 .vscode/
+wheels/
 runs/
 logs/
 *.log
 datasets/
+models/

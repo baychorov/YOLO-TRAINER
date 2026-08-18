@@ -62,6 +62,7 @@ def main():
         model_config=model_settings,
         training_config=training_settings,
         dataset_path=dataset_handler.yaml_path,
+        dataset_name=dataset_handler.dataset_name,
         logger=app_logger
     )
     
